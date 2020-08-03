@@ -1,0 +1,94 @@
+@import url(https://fonts.googleapis.com/css?family=Work+Sans:300,600);
+
+
+body{
+  text-align: center;
+  background: url(background.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	font-family: Helvetica;
+	color: #F6F09C;
+}
+
+.ring{
+  position:absolute;
+  bottom:0;
+  left:50%;
+}
+
+#cat{
+  display:block;
+  margin:auto;
+}
+
+#cat:hover{
+  filter:drop-shadow(0 0 5px #f0f);
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  grid-template-areas:
+  "header gatosVidas"
+  "main main"
+}
+
+/*Estilos de header*/
+header{
+  grid-area: header;
+  width:100%
+}
+
+/*Estilos de gatosVidas*/
+.gatosVidas{
+  grid-area: gatosVidas;
+  width: 80%;
+  height: 60%;
+  top: 20px;
+  font-size: 30px;
+  margin: auto;
+}
+
+p{
+  color: orangered;
+  margin: 10px 20px ;
+  text-align: center;
+}
+
+/*Estilos de main*/
+main{
+  grid-area: main;
+  margin: auto; 
+}
+
+.container{
+  width: 80%;
+  height: 90%;
+  text-align: center;
+  margin: auto;
+  top: 50px;
+}
+
+.preguntas{
+  background-color:rgba(201, 201, 202, 0.8);
+  display:none;
+}
+
+
+/*Animación del texto*/
+#text{
+  text-align: center;
+  margin:3em;
+  color:black;
+}
+
+button{
+  border: 1px;
+  border-radius: 10px;
+  width: 90px;
+  height: 50px;
+  cursor: pointer;
+  margin:3em;
+}
